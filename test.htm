@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id = "back">
+    <div ><p id = "blink-2">Я ничего не сделал</p></div>
+    <h4>Не психуй, это была просто шутка</h4>
+<style>
+h4 {
+    color: #fff;
+  font-weight: 700;
+  text-align: center;
+  animation:hiden .75s ease-out infinite;
+  text-shadow:text-shadow: 0 0 5px #abc, 0  0 7px #abc;
+  font-size: 60px; 
+  visibility: hidden;
+}
+@keyframes hiden {
+    80% {visibility: hidden;}
+    100% {visibility: visible;}
+}
+html {
+    animation:root .75s ease-out infinite;
+   background-color: blue;
+}
+@keyframes root {
+        10% {background-color: red;}
+        90% {background-color: green;}
+    }
+  #blink-2{
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  animation:blur .75s ease-out infinite;
+  text-shadow:text-shadow: 0 0 5px #abc, 0  0 7px #abc;
+  font-size: 60px;
+}
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}
+</style>
+</body>
+</html>
